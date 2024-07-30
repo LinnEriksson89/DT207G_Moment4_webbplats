@@ -20,15 +20,27 @@
         </header>
         <nav>
             <ul>
-                <li class="current"><a href="index.html">Start</a></li>
+                <li><a href="index.html">Start</a></li>
                 <li><a href="login.html">Logga in</a></li>
-                <li><a href="register.html">Skapa konto</a></li>
+                <li class="current"><a href="register.html">Skapa konto</a></li>
             </ul>
         </nav>
         <main id="maincontent">
             <h2>Välkommen!</h2>
-            <p>För att se innehållet på den här sidan behöver du logga in. Välj "Logga in" eller "Skapa konto" i menyn ovan.</p>
-            
+            <p>Här kan du skapa nytt konto. Du behöver ange ett användarnamn på 4-25 tecken och ett lösenord på 10-100 tecken.</p>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Logga in:</legend>
+                    <label for="username">Användarnamn:</label>
+                    <input type="text" id="username" name="username">
+                    <label for="password">Lösenord:</label>
+                    <input type="password" id="password" name="password">
+                    <div class="right">    
+                        <input type="reset" class="button" value="Rensa">
+                        <input type="submit" class="button" value="Logga in">
+                    </div>
+                </fieldset>
+            </form>
         </main>
         <footer>
             <p>Webbplats skapad som en del av <a

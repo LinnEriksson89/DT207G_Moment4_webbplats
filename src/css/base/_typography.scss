@@ -38,6 +38,13 @@ table, form {
     @include standardText;
 }
 
+li {
+    a {
+        
+        font-weight: bold;
+    }
+}
+
 @media only screen and (min-width: $screen-min-width){
     //Shorter paragraphs for increased readability on larger screens.
     p {
