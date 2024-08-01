@@ -10,6 +10,7 @@ let url = "http://127.0.0.1:4000/api/register";
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 const submitAccount = document.getElementById("submitaccount");
+let message = document.getElementById("registermessage");
 
 //On load run init.
 window.onload = init();
@@ -42,12 +43,10 @@ function createAccount (event) {
     .then(response => {
         if(response.status != 201) {
             //Show error message if account creation fails.
-            let message = document.getElementById("registermessage");
             message.innerHTML = "Kontot kunde inte skapas!";
             return;
         } else {
             //Show information that account was created.
-            let message = document.getElementById("registermessage");
             message.innerHTML = "Kontot har skapats. <a href='login.html'>Logga in</a> på inloggningssidan.";
         }
         return response.json()
