@@ -44,9 +44,15 @@ function logIn (event) {
         if(response.status != 200) {
             //Show error message if login failed.
             message.innerHTML = "Inloggningen misslyckades!";
+            return response.json();
         } else {
             //Show message that login was success.
             message.innerHTML = "Inloggningen lyckades!";
         }
+        return response.json()
+        .then(data => {
+            localStorage.setItem("token", data.token);
+        })
+        .catch(err => console.log(err))
     })
 }
