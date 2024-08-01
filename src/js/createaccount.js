@@ -1,3 +1,8 @@
+/* DT207G - Backend-baserad webbutveckling
+ * Moment 4
+ * Linn Eriksson, VT24
+ */
+
 "use strict";
 
 //URL for the API and other variables.
