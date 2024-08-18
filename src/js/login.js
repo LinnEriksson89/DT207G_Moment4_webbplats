@@ -52,6 +52,9 @@ function logIn (event) {
         return response.json()
         .then(data => {
             localStorage.setItem("token", data.token);
+            if(localStorage.getItem("token")) {
+                window.location.href = "index.html";
+            }
         })
         .catch(err => console.log(err))
     })
