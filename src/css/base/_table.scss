@@ -1,0 +1,24 @@
+/* DT207G - Backend-baserad webbutveckling
+ * Moment 4
+ * Linn Eriksson, VT24
+ */
+
+//Styling of table.
+table {
+
+    width: 100%;
+
+    tr:nth-child(even) {
+        background-color: $light-secondary-color;
+    }
+    
+    th {
+        border-bottom: 2px $dark-primary-color solid;
+        text-align: left;
+    }
+
+    td, th {
+        padding: 1%;
+        padding-right: 3%;  
+    }
+}
